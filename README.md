@@ -7,7 +7,7 @@ In this repository you can find the examples of solving and implementing main pr
 
 ### Folder №1:
 - **task12** - Coordination problem tested with two processes under the assumption that no failures take place
-- **task13b** - Implementation of Lamport timestamps
+- **task13** - Implementation of Lamport timestamps
 - **task14** - Implementation of vector timestamps
 
 ### Folder №2:
@@ -36,7 +36,7 @@ In this repository you can find the examples of solving and implementing main pr
 - **task61** - Three processes that exchange messages, encoded by XOR of the same pad.
 - **task62** - Three processes that each have a private-public key pair (you need to read in the keys from files)
 - **task63** - This task is for testing signatures. Two processes: one sends messages with signatures (that process needs a private key), the other uses the public key of the sending process to test the incoming messages and outputs wether the message was correctly signed.
-- **task54** - _Byzantine generals_: Implementation of a function, that initially is given if it is faulty, correct, or random. 
+- **task64** - _Byzantine generals_: Implementation of a function, that initially is given if it is faulty, correct, or random. 
 - A correct process forwards the first message as it is and decides according to majority. 
 - A faulty process forwards the opposite of the first received message. 
 - A random process makes a random choice and sends a random message. 
