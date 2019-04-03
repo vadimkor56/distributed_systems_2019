@@ -1,0 +1,5 @@
+Task 3.3
+
+If the write was done before performing the related action, then while recovering we know that the last action in the log wasn't finished, so we just try to do it again. For example, if the last write was "Yes", then we know that we didn't send "Yes" and we need to try to send it again.
+
+Otherwise, we know that the last action in the log was finished and the failure occurred while doing the next action (because it isn't in the log). So we need to continue execution right after the finished action (last one in the log). However, it seems much harder to find the next action than just to do the last action in the log.

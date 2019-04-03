@@ -1,0 +1,5 @@
+Change to the failure model:
+1) Messages can't be lost.
+
+Change to the ring-based algorithm:
+1) If current leader process crashes, then we initiate new election.

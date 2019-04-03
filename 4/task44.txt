@@ -1,0 +1,5 @@
+If this process who only knows 2PC is able to cancel, then after a timeout it will try to cancel the commit.
+
+The coordinator won't receive all the ACKs, however, after some time it will send Commit to every participant (but only if it won't receive Cancel message before that), because the coordinator does know that these participants voted Yes.
+
+So, commit can happen even if one or some participates only know 2PC.
